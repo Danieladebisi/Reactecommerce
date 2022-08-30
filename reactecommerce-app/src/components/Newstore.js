@@ -1,30 +1,30 @@
 import React from 'react'
-import StoreCard from './Newstorecard'
-import Storedic from './Newstoredic'
+import Newstorecard from './Newstorecard'
+import Newstoredic from './Newstoredic'
 import './Newstore.css'
 
 
 
 const displayData = (display) =>{
     return(
-        <StoreCard
+        <Newstorecard
         title={display.title}
         img={display.img}
         name={display.name}
         description={display.description}
-        price={display.price}></StoreCard>
+        price={display.price}></Newstorecard>
     )
 }
 
-const Store = () => {
+const Newstore = () => {
     return (
       <div className='container-fluid '>
           <div className='row parent'>
-              {Storedic.map(displayData)}
+              {Newstoredic.map(displayData)}
           
           </div>
       </div>
     )
   }
 
-export default Store
+export default Newstore
